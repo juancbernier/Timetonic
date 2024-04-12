@@ -11,7 +11,7 @@ import SwiftUI
 struct TimetonicApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginPageView()
+            ContentView()
         }
     }
 }

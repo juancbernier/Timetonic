@@ -13,6 +13,10 @@
 		F56A89302BC8AF4E0016307E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A892F2BC8AF4E0016307E /* Preview Assets.xcassets */; };
 		F56A89372BC8AF760016307E /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89362BC8AF760016307E /* LoginPageView.swift */; };
 		F56A893A2BC8AFCE0016307E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89392BC8AFCE0016307E /* Modifiers.swift */; };
+		F56A89412BC8BD1A0016307E /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89402BC8BD1A0016307E /* LoginPageViewModel.swift */; };
+		F56A89432BC8BD280016307E /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89422BC8BD280016307E /* LandingPageView.swift */; };
+		F56A89452BC8BD4C0016307E /* LandingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89442BC8BD4C0016307E /* LandingPageViewModel.swift */; };
+		F56A89482BC8DD7F0016307E /* LandingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89472BC8DD7F0016307E /* LandingPageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F56A892F2BC8AF4E0016307E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F56A89362BC8AF760016307E /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		F56A89392BC8AFCE0016307E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		F56A89402BC8BD1A0016307E /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		F56A89422BC8BD280016307E /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		F56A89442BC8BD4C0016307E /* LandingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewModel.swift; sourceTree = "<group>"; };
+		F56A89472BC8DD7F0016307E /* LandingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 			children = (
 				F56A89272BC8AF4B0016307E /* TimetonicApp.swift */,
 				F56A89292BC8AF4B0016307E /* ContentView.swift */,
+				F56A893E2BC8BCFA0016307E /* Data */,
+				F56A893F2BC8BCFF0016307E /* Domain */,
 				F56A893B2BC8BA750016307E /* UI */,
 				F56A89382BC8AFA70016307E /* Utilities */,
 				F56A892B2BC8AF4E0016307E /* Assets.xcassets */,
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F56A89362BC8AF760016307E /* LoginPageView.swift */,
+				F56A89402BC8BD1A0016307E /* LoginPageViewModel.swift */,
 			);
 			path = LoginPage;
 			sourceTree = "<group>";
@@ -103,8 +114,33 @@
 		F56A893D2BC8BA970016307E /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
+				F56A89422BC8BD280016307E /* LandingPageView.swift */,
+				F56A89442BC8BD4C0016307E /* LandingPageViewModel.swift */,
+				F56A89462BC8DD610016307E /* Cell */,
 			);
 			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		F56A893E2BC8BCFA0016307E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F56A893F2BC8BCFF0016307E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F56A89462BC8DD610016307E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89472BC8DD7F0016307E /* LandingPageCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56A89452BC8BD4C0016307E /* LandingPageViewModel.swift in Sources */,
 				F56A893A2BC8AFCE0016307E /* Modifiers.swift in Sources */,
+				F56A89482BC8DD7F0016307E /* LandingPageCell.swift in Sources */,
 				F56A892A2BC8AF4B0016307E /* ContentView.swift in Sources */,
+				F56A89432BC8BD280016307E /* LandingPageView.swift in Sources */,
 				F56A89372BC8AF760016307E /* LoginPageView.swift in Sources */,
+				F56A89412BC8BD1A0016307E /* LoginPageViewModel.swift in Sources */,
 				F56A89282BC8AF4B0016307E /* TimetonicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

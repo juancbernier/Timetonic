@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct LoginPageView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @AppStorage("isLoading") var isLoading: Bool = false
+    @AppStorage("isLogged") var isLogged: Bool = false
+    @StateObject var vm : LoginPageViewModel = LoginPageViewModel()
+    @State private var email: String = "android.developer@timetonic.com"
+    @State private var password: String = "Android.developer1"
     var body: some View {
-            
-            VStack(spacing: 20){
-                headerSection
-                    .padding(.bottom, 50)
-                    .padding(.top, 50)
-                emailSection
-                passwordSection
-                buttonSection
-                Spacer()
-            }
-            .padding(.horizontal)
-
+        
+        VStack(spacing: 20){
+            headerSection
+            emailSection
+            passwordSection
+            buttonSection
+            Spacer()
+        }
+        .padding(.horizontal)
+        
     }
     
 }
@@ -39,6 +40,8 @@ extension LoginPageView{
             Text("Please login to continue")
                 .foregroundStyle(Color.black.opacity(0.5))
         }
+        .padding(.bottom, 50)
+        .padding(.top, 100)
     }
     
     var emailSection: some View{
@@ -63,14 +66,32 @@ extension LoginPageView{
     
     var buttonSection: some View{
         Button(action: {
-            //action
+            withAnimation {
+                isLoading = true
+            }
+            login()
         }, label: {
             Text("Login")
+                .withCustomButtonStyle()
         })
-        .withCustomButtonStyle()
+    }
+    
+    
+    //ViewModel
+    private func login() {
+        Task {
+            do {
+                let registerResponse = try await vm.createAppkey(appname: "Timetonic")
+                let loginResponse = try await vm.userLogin(email: email, password: password, appkey: registerResponse)
+                let session = try await vm.createSession(oauthkey: loginResponse)
+                vm.isLoginSuccess = true
+                isLogged = true
+            } catch {
+                print("Error: \(error)")
+            }
+        }
     }
 }
-
 #Preview {
     LoginPageView()
 }

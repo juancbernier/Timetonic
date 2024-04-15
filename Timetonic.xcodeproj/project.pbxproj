@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F561C9302BCAB057000CA58A /* BooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C92F2BCAB056000CA58A /* BooksRepository.swift */; };
 		F561C9332BCAB105000CA58A /* RemoteBooksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9322BCAB105000CA58A /* RemoteBooksDataSource.swift */; };
-		F561C9362BCAB12E000CA58A /* BookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9352BCAB12E000CA58A /* BookDTO.swift */; };
+		F561C9362BCAB12E000CA58A /* TimetonicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9352BCAB12E000CA58A /* TimetonicDTO.swift */; };
 		F561C9442BCAB362000CA58A /* FetchBooksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9432BCAB362000CA58A /* FetchBooksUseCase.swift */; };
 		F561C9462BCAB390000CA58A /* BooksProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9452BCAB390000CA58A /* BooksProtocol.swift */; };
 		F561C9482BCAB3A3000CA58A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9472BCAB3A3000CA58A /* Book.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		F561C92F2BCAB056000CA58A /* BooksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRepository.swift; sourceTree = "<group>"; };
 		F561C9322BCAB105000CA58A /* RemoteBooksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteBooksDataSource.swift; sourceTree = "<group>"; };
-		F561C9352BCAB12E000CA58A /* BookDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDTO.swift; sourceTree = "<group>"; };
+		F561C9352BCAB12E000CA58A /* TimetonicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetonicDTO.swift; sourceTree = "<group>"; };
 		F561C9432BCAB362000CA58A /* FetchBooksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBooksUseCase.swift; sourceTree = "<group>"; };
 		F561C9452BCAB390000CA58A /* BooksProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksProtocol.swift; sourceTree = "<group>"; };
 		F561C9472BCAB3A3000CA58A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		F561C9342BCAB114000CA58A /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				F561C9352BCAB12E000CA58A /* BookDTO.swift */,
+				F561C9352BCAB12E000CA58A /* TimetonicDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F561C9362BCAB12E000CA58A /* BookDTO.swift in Sources */,
+				F561C9362BCAB12E000CA58A /* TimetonicDTO.swift in Sources */,
 				F561C94F2BCC94A9000CA58A /* Login.swift in Sources */,
 				F561C94D2BCC8E6B000CA58A /* UILayerInterfaces.swift in Sources */,
 				F56A89452BC8BD4C0016307E /* LandingPageViewModel.swift in Sources */,

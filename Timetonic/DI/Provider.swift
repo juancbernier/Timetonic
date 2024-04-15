@@ -14,7 +14,7 @@ final class Provider : ObservableObject{
     private let fetchBookUseCase : FetchBookForUILayerProtocol
     private let loginUseCase : UserAuthForUILayerProtocol
     @Published var loginViewModel:  LoginPageViewModel
-    @Published var  landingPageViewModel: LandingPageViewModel
+    @Published var landingPageViewModel: LandingPageViewModel
     
     init() {
         //NECESSARY RESOURCES FOR LOGIN PAGE

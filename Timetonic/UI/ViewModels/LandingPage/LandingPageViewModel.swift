@@ -28,6 +28,5 @@ extension LandingPageViewModel: LandingPageViewModelProtocol {
     func updateBooks() async {
         //We catch the "filtered books" and update the books publisher
         books = await fetchBookUseCase.fetchBooks()
-        print("lading page was called")
     }
 }

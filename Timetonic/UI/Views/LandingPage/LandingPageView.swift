@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandingPageView: View {
-    @EnvironmentObject var vm :  LandingPageViewModel
+    @EnvironmentObject var vm : LandingPageViewModel
     @Binding var isLoading: Bool
     
     var body: some View {
@@ -26,7 +26,7 @@ struct LandingPageView: View {
             withAnimation {
                 isLoading = false
                 Task{
-                    vm.updateBooks
+                    await vm.updateBooks()
                 }
             }
         }

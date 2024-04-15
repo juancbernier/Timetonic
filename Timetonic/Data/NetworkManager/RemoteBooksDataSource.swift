@@ -17,8 +17,6 @@ final class NetworkManager : NetworkManagerProtocol {
     @AppStorage("sessKey") var sessionKey: String?
     @AppStorage("oAuthUser") var oAuthUser: String?
 
-    
-
     func fetchBooks() async -> [Book] {
         guard let session = sessionKey, let oAuth = oAuthUser else { return [] }
             let parameters = "req=getAllBooks&o_u=\(oAuth)&u_c=\(oAuth)&sesskey=\(session)"
@@ -26,10 +24,11 @@ final class NetworkManager : NetworkManagerProtocol {
             let request = URLRequest(url: requestURL)
             do{
                 let (data, _) = try await URLSession.shared.data(for: request)
-                let decodedData = try JSONDecoder().decode(Result.self, from: data)
+                let decodedData = try JSONDecoder().decode(TimetonicDTO.self, from: data)
+                print("2")
                 guard decodedData.status == "ok" else  { return [] }
-                print("\(decodedData.allBooks)\nFetched data with success")
-                return decodedData.allBooks.books
+                print("\(decodedData.allBooks.books)\nFetched data with success")
+                return  decodedData.allBooks.books
             }catch{
                 print(error.localizedDescription)
             }

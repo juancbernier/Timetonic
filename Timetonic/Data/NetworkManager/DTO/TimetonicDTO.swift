@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Result: Codable {
+struct TimetonicDTO: Codable {
     let status: String
     let allBooks: AllBooks
 }
@@ -26,7 +26,7 @@ struct BookImageCover: Codable, Hashable{
     let oCoverImg : String?
 }
 
-//this one will help us in the repository of the Data layer, it will help us converting our "complex" DTO into a simple Entity for later use.
+
 extension [Book] {
     func mapToDomain() -> [UIBookEntity] {
         var arrayOfUIBooksEntity : [UIBookEntity] = []

@@ -3,4 +3,114 @@
    uuid = "05FD3161-FC88-4921-9A14-DA4CABB77447"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "NetworkManager"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - b2d597d582e92a02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.oAuthUser.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - 5364be393a12eb20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.oAuthUser.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - d996501ec17dccd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.oAuthUser.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - c307d2eab8805cb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.oAuthUser.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - c19e31263ac5cd18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.$oAuthUser.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "99A6A4E2-0AE4-4F87-8988-7DDF938FD2D6 - e74fb46d790bacb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Timetonic.NetworkManager.init() -&gt; Timetonic.NetworkManager"
+                  moduleName = "Timetonic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanbernier/Desktop/Timetonic/Timetonic/Data/NetworkManager/RemoteBooksDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -8,22 +8,22 @@
 import Foundation
 
 
-struct TimetonicDTO: Codable {
+struct TimetonicDTO: Decodable {
     let status: String
     let allBooks: AllBooks
 }
 
-struct AllBooks: Codable {
+struct AllBooks: Decodable {
     let books: [Book]
 }
 
-struct Book : Codable , Hashable{
-    let ownerPrefs: BookImageCover
+struct Book : Decodable{
+   let ownerPrefs: BookImageCover
     let b_c: String
 }
 
-struct BookImageCover: Codable, Hashable{
-    let oCoverImg : String?
+struct BookImageCover: Decodable{
+    let oCoverImg : String
 }
 
 
@@ -31,10 +31,9 @@ extension [Book] {
     func mapToDomain() -> [UIBookEntity] {
         var arrayOfUIBooksEntity : [UIBookEntity] = []
         for book in self {
-            if let coverImage = URL(string: book.ownerPrefs.oCoverImg ?? "") {
-                arrayOfUIBooksEntity.append(UIBookEntity(name: book.b_c, imageURL: coverImage))
+            let newBook = UIBookEntity(name: book.b_c, imageURL: book.ownerPrefs.oCoverImg)
+                arrayOfUIBooksEntity.append(newBook)
             }
-        }
         return arrayOfUIBooksEntity
     }
 }

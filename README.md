@@ -1,24 +1,24 @@
-## Repository Architecture Summary
+# Repository Architecture Summary
 #Introduction
 
 This repository implements a layered architecture with the MVVM design pattern and Clean Architecture to keep the code organized, modular, and maintainable. It avoids the use of singletons and applies dependency injection to improve testability and flexibility.
 
-# Layers
+## Layers
 
 The project is divided into three main layers:
 
-# 1. User Interface (UI)
+## 1. User Interface (UI)
 
 Contains the views and view models that interact directly with the user.
 Views are responsible for presenting information to the user and capturing user interaction.
 View models act as intermediaries between the views and the domain layer, preparing data and business logic for the views.
-# 2. Domain (Domain)
+## 2. Domain (Domain)
 
 Contains the entities, interfaces, and use cases that represent the business logic of the application.
 Entities are objects that model the application's data.
 Interfaces define the contracts that data layer implementations must fulfill.
 Use cases encapsulate the core business logic of the application, such as login or book retrieval.
-# 3. Data (Data)
+## 3. Data (Data)
 
 Contains the concrete implementations of the domain layer interfaces.
 The repository handles data access and persistence, such as retrieving books from a database or a web service.

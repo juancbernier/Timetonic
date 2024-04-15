@@ -12,6 +12,7 @@ final class LoginUseCase {
     @AppStorage("isLoggedIn") var isLoggedIn : Bool = false
     @AppStorage("sessKey") var sessionKey: String?
     @AppStorage("oAuthUser") var oAuthUser: String?
+
 }
 
 extension LoginUseCase : UserAuthForUILayerProtocol {
@@ -33,7 +34,7 @@ extension LoginUseCase : UserAuthForUILayerProtocol {
             guard oAuthResponse.status == "ok", let oauthkey = oAuthResponse.oauthkey else { return }
             print("OAuth login success")
             
-            parameters = "\(Constants.reqSessionKey)&o_u=\(oAuthResponse.o_u)&oauthkey=\(oauthkey)&restrictions="
+            parameters = "\(Constants.reqSessionKey)&o_u=\(oAuthResponse.o_u)&oauthkey=\(oauthkey)"
             guard let sessionKeyRequest = URL(string: "\(Constants.url)?\(parameters)") else { return }
             request = URLRequest(url: sessionKeyRequest)
             let (sessionKeyData, _) = try await URLSession.shared.data(for: request)
@@ -41,7 +42,7 @@ extension LoginUseCase : UserAuthForUILayerProtocol {
             guard sessionKeyResponse.status == "ok", let sessionKey = sessionKeyResponse.sesskey else { return }
             print("session success")
             
-            self.oAuthUser = oauthkey
+            self.oAuthUser = oAuthResponse.o_u
             self.sessionKey = sessionKey
             isLoggedIn = true
             

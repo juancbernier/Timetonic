@@ -18,6 +18,7 @@ final class FetchBooksUseCase{
 extension FetchBooksUseCase : FetchBookForUILayerProtocol{
     func fetchBooks() async -> [UIBookEntity] {
         //here because here we have usually some of the "business logic" we have to make our filters, but because i just oriented the DTO to read the ones that aren't the "contact books" ones... we good.
+        
         await repository.fetchBooks()
     }
 }

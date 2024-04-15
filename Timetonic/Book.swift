@@ -11,5 +11,5 @@ import Foundation
 //"identifiable UUID" and just use the unique string id when calling the entity into the UI
 struct UIBookEntity: Hashable {
     let name: String
-    let imageURL : URL
+    let imageURL : String
 }

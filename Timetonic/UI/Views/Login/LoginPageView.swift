@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct LoginPageView: View {
-    @AppStorage("isLoading") var isLoading: Bool = false
-    @AppStorage("isLogged") var isLogged: Bool = false
-    @StateObject var vm : LoginPageViewModel = LoginPageViewModel()
+    @Binding var isLoadingResponse: Bool
+    @EnvironmentObject var vm : LoginPageViewModel
     @State private var email: String = "android.developer@timetonic.com"
     @State private var password: String = "Android.developer1"
     var body: some View {
@@ -67,7 +66,7 @@ extension LoginPageView{
     var buttonSection: some View{
         Button(action: {
             withAnimation {
-                isLoading = true
+                isLoadingResponse = true
             }
             login()
         }, label: {
@@ -79,19 +78,12 @@ extension LoginPageView{
     
     //ViewModel
     private func login() {
-        Task {
-            do {
-                let registerResponse = try await vm.createAppkey(appname: "Timetonic")
-                let loginResponse = try await vm.userLogin(email: email, password: password, appkey: registerResponse)
-                let session = try await vm.createSession(oauthkey: loginResponse)
-                vm.isLoginSuccess = true
-                isLogged = true
-            } catch {
-                print("Error: \(error)")
-            }
+        Task{
+            await vm.login(email: email, password: password)
         }
     }
 }
 #Preview {
-    LoginPageView()
+    LoginPageView(isLoadingResponse: .constant(false))
+        .environmentObject(LoginPageViewModel(loginUseCase: LoginUseCase()))
 }

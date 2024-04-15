@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F561C9302BCAB057000CA58A /* BooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C92F2BCAB056000CA58A /* BooksRepository.swift */; };
+		F561C9332BCAB105000CA58A /* RemoteBooksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9322BCAB105000CA58A /* RemoteBooksDataSource.swift */; };
+		F561C9362BCAB12E000CA58A /* BookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9352BCAB12E000CA58A /* BookDTO.swift */; };
+		F561C9442BCAB362000CA58A /* FetchBooksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9432BCAB362000CA58A /* FetchBooksUseCase.swift */; };
+		F561C9462BCAB390000CA58A /* BooksProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9452BCAB390000CA58A /* BooksProtocol.swift */; };
+		F561C9482BCAB3A3000CA58A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9472BCAB3A3000CA58A /* Book.swift */; };
+		F561C94A2BCC8322000CA58A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9492BCC8322000CA58A /* Constants.swift */; };
+		F561C94D2BCC8E6B000CA58A /* UILayerInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C94C2BCC8E6B000CA58A /* UILayerInterfaces.swift */; };
+		F561C94F2BCC94A9000CA58A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C94E2BCC94A9000CA58A /* Login.swift */; };
+		F561C9512BCC96E5000CA58A /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9502BCC96E5000CA58A /* LoginUseCase.swift */; };
+		F561C9582BCCA982000CA58A /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C9572BCCA982000CA58A /* Provider.swift */; };
 		F56A89282BC8AF4B0016307E /* TimetonicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89272BC8AF4B0016307E /* TimetonicApp.swift */; };
-		F56A892A2BC8AF4B0016307E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89292BC8AF4B0016307E /* ContentView.swift */; };
+		F56A892A2BC8AF4B0016307E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89292BC8AF4B0016307E /* MainView.swift */; };
 		F56A892C2BC8AF4E0016307E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A892B2BC8AF4E0016307E /* Assets.xcassets */; };
 		F56A89302BC8AF4E0016307E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A892F2BC8AF4E0016307E /* Preview Assets.xcassets */; };
 		F56A89372BC8AF760016307E /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A89362BC8AF760016307E /* LoginPageView.swift */; };
@@ -20,9 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F561C92F2BCAB056000CA58A /* BooksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRepository.swift; sourceTree = "<group>"; };
+		F561C9322BCAB105000CA58A /* RemoteBooksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteBooksDataSource.swift; sourceTree = "<group>"; };
+		F561C9352BCAB12E000CA58A /* BookDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDTO.swift; sourceTree = "<group>"; };
+		F561C9432BCAB362000CA58A /* FetchBooksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBooksUseCase.swift; sourceTree = "<group>"; };
+		F561C9452BCAB390000CA58A /* BooksProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksProtocol.swift; sourceTree = "<group>"; };
+		F561C9472BCAB3A3000CA58A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F561C9492BCC8322000CA58A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F561C94C2BCC8E6B000CA58A /* UILayerInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayerInterfaces.swift; sourceTree = "<group>"; };
+		F561C94E2BCC94A9000CA58A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F561C9502BCC96E5000CA58A /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		F561C9572BCCA982000CA58A /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		F56A89242BC8AF4B0016307E /* Timetonic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetonic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56A89272BC8AF4B0016307E /* TimetonicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetonicApp.swift; sourceTree = "<group>"; };
-		F56A89292BC8AF4B0016307E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F56A89292BC8AF4B0016307E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F56A892B2BC8AF4E0016307E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56A892D2BC8AF4E0016307E /* Timetonic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timetonic.entitlements; sourceTree = "<group>"; };
 		F56A892F2BC8AF4E0016307E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +67,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F561C9312BCAB05A000CA58A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9322BCAB105000CA58A /* RemoteBooksDataSource.swift */,
+				F561C9342BCAB114000CA58A /* DTO */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F561C9342BCAB114000CA58A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9352BCAB12E000CA58A /* BookDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		F561C93F2BCAB2E5000CA58A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9422BCAB2FB000CA58A /* Entities */,
+				F561C9412BCAB2F5000CA58A /* Interfaces */,
+				F561C9402BCAB2EE000CA58A /* UseCases */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		F561C9402BCAB2EE000CA58A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9432BCAB362000CA58A /* FetchBooksUseCase.swift */,
+				F561C9502BCC96E5000CA58A /* LoginUseCase.swift */,
+			);
+			name = UseCases;
+			sourceTree = "<group>";
+		};
+		F561C9412BCAB2F5000CA58A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9452BCAB390000CA58A /* BooksProtocol.swift */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		F561C9422BCAB2FB000CA58A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9472BCAB3A3000CA58A /* Book.swift */,
+				F561C94E2BCC94A9000CA58A /* Login.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		F561C94B2BCC8E40000CA58A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F561C94C2BCC8E6B000CA58A /* UILayerInterfaces.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F561C9522BCCA8EA000CA58A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89292BC8AF4B0016307E /* MainView.swift */,
+				F561C9552BCCA94B000CA58A /* Login */,
+				F561C9542BCCA93B000CA58A /* LandingPage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F561C9532BCCA8F4000CA58A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F561C95A2BCCCB55000CA58A /* Login */,
+				F561C9592BCCCB4A000CA58A /* LandingPage */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F561C9542BCCA93B000CA58A /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89422BC8BD280016307E /* LandingPageView.swift */,
+				F56A89462BC8DD610016307E /* Cell */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		F561C9552BCCA94B000CA58A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89362BC8AF760016307E /* LoginPageView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F561C9562BCCA96C000CA58A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F561C9572BCCA982000CA58A /* Provider.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F561C9592BCCCB4A000CA58A /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89442BC8BD4C0016307E /* LandingPageViewModel.swift */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		F561C95A2BCCCB55000CA58A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F56A89402BC8BD1A0016307E /* LoginPageViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F561C95B2BCCCBC5000CA58A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F561C92F2BCAB056000CA58A /* BooksRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		F56A891B2BC8AF4B0016307E = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				F56A89272BC8AF4B0016307E /* TimetonicApp.swift */,
-				F56A89292BC8AF4B0016307E /* ContentView.swift */,
-				F56A893E2BC8BCFA0016307E /* Data */,
-				F56A893F2BC8BCFF0016307E /* Domain */,
+				F561C9562BCCA96C000CA58A /* DI */,
 				F56A893B2BC8BA750016307E /* UI */,
+				F561C93F2BCAB2E5000CA58A /* Domain */,
+				F56A893E2BC8BCFA0016307E /* Data */,
 				F56A89382BC8AFA70016307E /* Utilities */,
 				F56A892B2BC8AF4E0016307E /* Assets.xcassets */,
 				F56A892D2BC8AF4E0016307E /* Timetonic.entitlements */,
@@ -89,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				F56A89392BC8AFCE0016307E /* Modifiers.swift */,
+				F561C9492BCC8322000CA58A /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -96,43 +248,20 @@
 		F56A893B2BC8BA750016307E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F56A893D2BC8BA970016307E /* LandingPage */,
-				F56A893C2BC8BA7F0016307E /* LoginPage */,
+				F561C9522BCCA8EA000CA58A /* Views */,
+				F561C9532BCCA8F4000CA58A /* ViewModels */,
+				F561C94B2BCC8E40000CA58A /* Interfaces */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		F56A893C2BC8BA7F0016307E /* LoginPage */ = {
-			isa = PBXGroup;
-			children = (
-				F56A89362BC8AF760016307E /* LoginPageView.swift */,
-				F56A89402BC8BD1A0016307E /* LoginPageViewModel.swift */,
-			);
-			path = LoginPage;
-			sourceTree = "<group>";
-		};
-		F56A893D2BC8BA970016307E /* LandingPage */ = {
-			isa = PBXGroup;
-			children = (
-				F56A89422BC8BD280016307E /* LandingPageView.swift */,
-				F56A89442BC8BD4C0016307E /* LandingPageViewModel.swift */,
-				F56A89462BC8DD610016307E /* Cell */,
-			);
-			path = LandingPage;
 			sourceTree = "<group>";
 		};
 		F56A893E2BC8BCFA0016307E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F561C95B2BCCCBC5000CA58A /* Repository */,
+				F561C9312BCAB05A000CA58A /* NetworkManager */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		F56A893F2BC8BCFF0016307E /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		F56A89462BC8DD610016307E /* Cell */ = {
@@ -213,14 +342,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F561C9362BCAB12E000CA58A /* BookDTO.swift in Sources */,
+				F561C94F2BCC94A9000CA58A /* Login.swift in Sources */,
+				F561C94D2BCC8E6B000CA58A /* UILayerInterfaces.swift in Sources */,
 				F56A89452BC8BD4C0016307E /* LandingPageViewModel.swift in Sources */,
+				F561C9482BCAB3A3000CA58A /* Book.swift in Sources */,
+				F561C9332BCAB105000CA58A /* RemoteBooksDataSource.swift in Sources */,
 				F56A893A2BC8AFCE0016307E /* Modifiers.swift in Sources */,
+				F561C94A2BCC8322000CA58A /* Constants.swift in Sources */,
 				F56A89482BC8DD7F0016307E /* LandingPageCell.swift in Sources */,
-				F56A892A2BC8AF4B0016307E /* ContentView.swift in Sources */,
+				F56A892A2BC8AF4B0016307E /* MainView.swift in Sources */,
+				F561C9582BCCA982000CA58A /* Provider.swift in Sources */,
 				F56A89432BC8BD280016307E /* LandingPageView.swift in Sources */,
+				F561C9462BCAB390000CA58A /* BooksProtocol.swift in Sources */,
+				F561C9442BCAB362000CA58A /* FetchBooksUseCase.swift in Sources */,
 				F56A89372BC8AF760016307E /* LoginPageView.swift in Sources */,
 				F56A89412BC8BD1A0016307E /* LoginPageViewModel.swift in Sources */,
+				F561C9302BCAB057000CA58A /* BooksRepository.swift in Sources */,
 				F56A89282BC8AF4B0016307E /* TimetonicApp.swift in Sources */,
+				F561C9512BCC96E5000CA58A /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

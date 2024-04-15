@@ -9,18 +9,18 @@ import SwiftUI
 
 
 
-struct ContentView: View {
-    @AppStorage("isLogged") var isLogged: Bool?
-    @AppStorage("isLoading") var isLoading: Bool = false
+struct MainView: View {
+    @StateObject var provider = Provider()
+    @AppStorage("isLoggedIn") var isLoggedIn : Bool?
+    @State var isLoading: Bool = false
+
     var body: some View {
         ZStack{
-       
-            if isLogged ?? false{
-                LandingPageView()
+            if isLoggedIn ?? false{
+                LandingPageView(isLoading: $isLoading)
             }else{
-                LoginPageView()
+                LoginPageView(isLoadingResponse: $isLoading)
             }
-            
             if isLoading{
                 Color.gray.opacity(0.5)
                 Rectangle()
@@ -36,10 +36,12 @@ struct ContentView: View {
             }
 
         }
+        .environmentObject(provider.landingPageViewModel)
+        .environmentObject(provider.loginViewModel)
         .ignoresSafeArea()
     }
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }

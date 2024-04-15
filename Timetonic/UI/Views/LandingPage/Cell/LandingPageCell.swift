@@ -9,13 +9,11 @@ import SwiftUI
 
 struct LandingPageCell: View {
     let name: String?
-    var image: String? = nil
-    private let imageURL : URL?
+    var image: URL? = nil
     
-    init(name: String?, image: String? = nil) {
+    init(name: String?, image: URL? = nil) {
         self.name = name
         self.image = image
-        imageURL = URL(string: image ?? "")
     }
     
     var body: some View {
@@ -27,14 +25,17 @@ struct LandingPageCell: View {
             .padding(.horizontal)
             .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding()
+        .background(Color.gray.opacity(0.2))
+        .cornerRadius(20)
     }
 }
 
 extension LandingPageCell{
     @ViewBuilder
     var imageSection: some View {
-        if image != nil && image != ""{
-            AsyncImage(url: imageURL) { image in
+        if image != nil && image != nil{
+            AsyncImage(url: image) { image in
                 image
                     .resizable()
                     .scaledToFit()
@@ -67,6 +68,9 @@ extension LandingPageCell{
 }
 
 #Preview {
-    LandingPageCell(name: "Harry Potter", image: "https://timetonic.com/live/dbi/in/tb/FU-1701419839-65699b3f78400/mo dele-suivi-projet.jpg")
+    LandingPageCell(name: "Harry Potter", image: URL(string: "https://timetonic.com/live/dbi/in/tb/FU-1701419839-65699b3f78400/mo dele-suivi-projet.jpg"))
         .previewLayout(.sizeThatFits)
 }
+
+
+
